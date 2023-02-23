@@ -39,6 +39,7 @@ const Settings = () => {
             />
           </IonItem>
         </IonList>
+        <IonTitle>Login</IonTitle>
       </IonContent>
     </IonPage>
   );

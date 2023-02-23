@@ -5,8 +5,9 @@ import { StatusBar, Style } from '@capacitor/status-bar';
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 
-import Feed from './pages/Feed';
-import Lists from './pages/Battle';
+import Home from './pages/Home';
+import Battle from './pages/Battle';
+import Scorer from './pages/Scorer';
 import ListDetail from './pages/ListDetail';
 import Settings from './pages/Settings';
 import Tabs from './pages/Tabs';
@@ -27,7 +28,7 @@ const AppShell = () => {
       <IonReactRouter>
         <IonRouterOutlet id="main">
           <Route path="/tabs" render={() => <Tabs />} />
-          <Route path="/" render={() => <Redirect to="/tabs/feed" />} exact={true} />
+          <Route path="/" render={() => <Redirect to="/tabs/Home" />} exact={true} />
         </IonRouterOutlet>
       </IonReactRouter>
     </IonApp>
